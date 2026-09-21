@@ -1,1 +1,1 @@
-# Agriculture-Mini-Project
+# Capstone-Agriculture-Mini-Project
