@@ -1,0 +1,5 @@
+Dataset Title: Agricultural Exports of India (2015-2025)
+Source Portal: APEDA Agri Exchange (Ministry of Commerce and Industry) & Data.gov.in
+Source URL: https://agriexchange.apeda.gov.in/
+Commodities Covered: Rice (Basmati & Non-Basmati), Spices, Tea, Marine Products
+Frequency: Annual Financial Year records
