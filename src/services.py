@@ -40,3 +40,4 @@ def list_commodities(df: pd.DataFrame) -> List[str]:
 def get_year_bounds(df: pd.DataFrame) -> Tuple[int, int]:
   """Service API: Returns (min_year, max_year) bounds."""
   return int(df['year'].min()), int(df['year'].max())
+    
