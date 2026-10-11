@@ -1,14 +1,15 @@
+import os
 import pandas as pd
 
 
 def load_data(path):
+    if not os.path.exists(path):
+        print("File not found, check the path.")
+        return None
     try:
         df = pd.read_csv(path)
         print("Data loaded successfully!")
         return df
-    except FileNotFoundError:
-        print("File not found, check the path.")
-        return None
     except Exception as e:
         print("Something went wrong:", e)
         return None
@@ -43,15 +44,15 @@ def add_unit_value(df):
 
 
 def filter_by_commodity(df, name):
-    return df[df["Commodity_Group"] == name]
+    return df.loc[df["Commodity_Group"] == name]
 
 
 def filter_by_country(df, country):
-    return df[df["Destination_Country"] == country]
+    return df.loc[df["Destination_Country"] == country]
 
 
 def filter_by_years(df, start, end):
-    return df[(df["Year"] >= start) & (df["Year"] <= end)]
+    return df.loc[(df["Year"] >= start) & (df["Year"] <= end)]
 
 
 def get_clean_data(path):
